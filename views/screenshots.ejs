@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="”robots”" content="”noindex”" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./stylesheets/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<div class="izbornik">
+				<div class="izbornik_antonio">
+					<div class="izbornik_unutarnji_antonio">Antonio Čutura</div>
+				</div>
+				<a href="/">
+					<div class="izbornik_flex">
+						<div class="izbornik_unutarnji">Početna</div>
+					</div>
+				</a>
+				<a href="/#kontakt">
+					<div class="izbornik_flex">
+						<div class="izbornik_unutarnji">Kontakt</div>
+					</div>
+				</a>
+			</div>
+		</header>
+		<h2><%= locals.err %></h2>
+		<div class="screenshots">
+			<div class="screenshots_div">
+				<img src="<%= locals.scr_1 %>" alt="" class="kod_slika_1" />
+			</div>
+			<div class="screenshots_div">
+				<img src="<%= locals.scr_2 %>" alt="" class="kod_slika_2" />
+			</div>
+		</div>
+		<div class="opisV">
+			<div class="opisU">
+				Kako pretraživač funkcionira: Ova web aplikacija je napravljena sa node
+				js uz korištenje express frameworka za lakše routanje. Aplikacija uzima
+				input korisnika i u slučaje ispravne lozinke, uspoređuje ime/prezime sa
+				zapisanim katastarskim podacima, zapisuje rezultate u array, te vraća
+				array u ejs dokumentu kao odgovor.
+			</div>
+		</div>
+	</body>
+</html>

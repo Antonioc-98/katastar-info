@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="”robots”" content="”noindex”" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./stylesheets/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<div class="izbornik">
+				<div class="izbornik_antonio">
+					<div class="izbornik_unutarnji_antonio">Antonio Čutura</div>
+				</div>
+				<a href="/">
+					<div class="izbornik_flex">
+						<div class="izbornik_unutarnji">Početna</div>
+					</div>
+				</a>
+				<a href="/#kontakt">
+					<div class="izbornik_flex">
+						<div class="izbornik_unutarnji">Kontakt</div>
+					</div>
+				</a>
+			</div>
+		</header>
+		<div class="form_div">
+			<div class="upute">
+				1. Upišite prezime pa ime ako je fizička osoba, <br />
+				ili naziv poduzeća ako je pravna osoba<br /><br />
+				2. Klikni submit i sačekaj rezultate <br />
+				<br />
+				Rezultati su dostupni samo za katastarske čestice<br />
+				koje se nalaze u gradovima Pula i Šibenik.
+			</div>
+			<form action="/users" method="POST" autocomplete="on">
+				<div>
+					<label
+						>Prezime i ime
+						<div>
+							<input
+								type="search"
+								name="firstName"
+								value="<%= locals.firstName %>"
+								class="input_field" />
+						</div>
+					</label>
+				</div>
+				<div class="submit_centar">
+					<button type="submit" class="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
