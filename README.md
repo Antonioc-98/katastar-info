@@ -1,0 +1,1 @@
+Aplikacija omogućuje pretraživanje katastarskih čestica od privatnih i pravnih osoba. Rezultati daju informacije o Broju ZK uloška sa kojim se kasnije mogu pronaći detaljne informacije o katastarskoj čestici i lokaciji čestice.
